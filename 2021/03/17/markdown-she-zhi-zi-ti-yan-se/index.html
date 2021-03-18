@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="随机算法, 搜索 推荐 机器学习 算法">
+    <meta name="keywords" content="搜索 推荐 机器学习 算法">
     <meta name="description" content="学习，读书，生活">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>随机算法 | Leave 的博客</title>
+    <title>Leave 的博客</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -312,12 +312,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/17.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/0.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">随机算法</h1>
+                    <h1 class="description center-align post-title"></h1>
                 </div>
             </div>
         </div>
@@ -431,13 +431,9 @@
             <div class="row tag-cate">
                 <div class="col s7">
                     
-                    <div class="article-tag">
-                        
-                            <a href="/tags/%E7%AE%97%E6%B3%95-%E8%92%99%E7%89%B9%E5%8D%A1%E6%B4%9B-%E6%8B%89%E6%96%AF%E7%BB%B4%E5%8A%A0%E6%96%AF/">
-                                <span class="chip bg-color">算法 蒙特卡洛 拉斯维加斯</span>
-                            </a>
-                        
-                    </div>
+                          <div class="article-tag">
+                            <span class="chip bg-color">无标签</span>
+                          </div>
                     
                 </div>
                 <div class="col s5 right-align">
@@ -458,14 +454,14 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    767
+                    213
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    2 分
+                    1 分
                 </div>
                 
 
@@ -488,10 +484,14 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p>链接：<a target="_blank" rel="noopener" href="https://www.zhihu.com/question/20254139/answer/33572009">https://www.zhihu.com/question/20254139/answer/33572009</a></p>
-<p>“蒙特卡罗”是一种什么特性呢？我们知道，既然是随机算法，在采样不全时，通常不能保证找到最优解，只能说是尽量找。那么根据怎么个“尽量”法儿，我们我们把随机算法分成两类：蒙特卡罗算法：采样越多，越近似最优解；拉斯维加斯算法：采样越多，越有机会找到最优解；举个例子，假如筐里有100个苹果，让我每次闭眼拿1个，挑出最大的。于是我随机拿1个，再随机拿1个跟它比，留下大的，再随机拿1个……我每拿一次，留下的苹果都至少不比上次的小。拿的次数越多，挑出的苹果就越大，但我除非拿100次，否则无法肯定挑出了最大的。这个挑苹果的算法，就属于蒙特卡罗算法——尽量找好的，但不保证是最好的。<br>而拉斯维加斯算法，则是另一种情况。假如有一把锁，给我100把钥匙，只有1把是对的。于是我每次随机拿1把钥匙去试，打不开就再换1把。我试的次数越多，打开（最优解）的机会就越大，但在打开之前，那些错的钥匙都是没有用的。这个试钥匙的算法，就是拉斯维加斯的——尽量找最好的，但不保证能找到。所以你看，这两个词并不深奥，它只是概括了随机算法的特性，算法本身可能复杂，也可能简单。这两个词本身是两座著名赌城，因为赌博中体现了许多随机算法，所以借过来命名。这两类随机算法之间的选择，往往受到问题的局限。如果问题要求在有限采样内，必须给出一个解，但不要求是最优解，那就要用蒙特卡罗算法。反之，如果问题要求必须给出最优解，但对采样没有限制，那就要用拉斯维加斯算法。<br>对于机器围棋程序而言，因为每一步棋的运算时间、堆栈空间都是有限的，而且不要求最优解，所以ZEN涉及的随机算法，肯定是蒙特卡罗式的。机器下棋的算法本质都是搜索树，围棋难在它的树宽可以达到好几百（国际象棋只有几十）。在有限时间内要遍历这么宽的树，就只能牺牲深度（俗称“往后看几步”），但围棋又是依赖远见的游戏，甚至不仅是看“几步”的问题。所以，要想保证搜索深度，就只能放弃遍历，改为随机采样——这就是为什么在没有MCTS（蒙特卡罗搜树）类的方法之前，机器围棋的水平几乎是笑话。而采用了MCTS方法后，搜索深度就大大增加了。</p>
-<p><font color="Blue">我是蓝色</font></p>
-<p><a target="_blank" rel="noopener" href="http://staff.ustc.edu.cn/~lszhuang/alg/sch-4.pdf">随机化算法</a></p>
+                <h1 id="MarkDown-字体设置"><a href="#MarkDown-字体设置" class="headerlink" title="MarkDown 字体设置"></a>MarkDown 字体设置</h1><h2 id="设置字体-amp-amp-颜色-amp-amp-大小"><a href="#设置字体-amp-amp-颜色-amp-amp-大小" class="headerlink" title="设置字体&amp;&amp;颜色&amp;&amp;大小"></a>设置字体&amp;&amp;颜色&amp;&amp;大小</h2><p><code>&lt;font face="黑体"&gt;我是黑体字&lt;/font&gt; &lt;font face="微软雅黑"&gt;我是微软雅黑&lt;/font&gt; &lt;font face="STCAIYUN"&gt;我是华文彩云&lt;/font&gt; &lt;font color=red&gt;我是红色&lt;/font&gt; &lt;font color=#008000&gt;我是绿色&lt;/font&gt; &lt;font color=Blue&gt;我是蓝色&lt;/font&gt; &lt;font size=5&gt;我是尺寸&lt;/font&gt; &lt;font face="黑体" color=green size=5&gt;我是黑体，绿色，尺寸为5&lt;/font&gt; </code></p>
+<p>效果如下：</p>
+<p><font face="黑体">我是黑体字</font><br><font face="微软雅黑">我是微软雅黑</font><br><font face="STCAIYUN">我是华文彩云</font><br><font color="red">我是红色</font><br><font color="#008000">我是绿色</font><br><font color="Blue">我是蓝色</font><br><font size="5">我是尺寸</font><br><font face="黑体" color="green" size="5">我是黑体，绿色，尺寸为5</font></p>
+<h2 id="设置文字背景色"><a href="#设置文字背景色" class="headerlink" title="设置文字背景色"></a>设置文字背景色</h2><p><code>&lt;table&gt;&lt;tr&gt;&lt;td bgcolor=blue&gt;背景色&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;</code></p>
+<table><tbody><tr><td bgcolor="blue">背景色</td></tr></tbody></table>
+
+
+
 
                 
             </div>
@@ -518,7 +518,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="http://leave.net.cn/2021/03/17/sui-ji-suan-fa/">http://leave.net.cn/2021/03/17/sui-ji-suan-fa/</a>
+                    <a href="http://leave.net.cn/2021/03/17/markdown-she-zhi-zi-ti-yan-se/">http://leave.net.cn/2021/03/17/markdown-she-zhi-zi-ti-yan-se/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -555,11 +555,7 @@
                 <div class="post-meta__tag-list" style="display: inline-block;">
                     
                         <div class="article-tag">
-                            
-                                <a href="/tags/%E7%AE%97%E6%B3%95-%E8%92%99%E7%89%B9%E5%8D%A1%E6%B4%9B-%E6%8B%89%E6%96%AF%E7%BB%B4%E5%8A%A0%E6%96%AF/">
-                                    <span class="chip bg-color">算法 蒙特卡洛 拉斯维加斯</span>
-                                </a>
-                            
+                            <span class="chip bg-color">无标签</span>
                         </div>
                     
                 </div>
@@ -723,9 +719,9 @@
 
 <script type="text/javascript">
     disqus_config = function () {
-        this.page.url = 'http://leave.net.cn/2021/03/17/sui-ji-suan-fa/';
-        this.page.identifier = '/2021/03/17/sui-ji-suan-fa/';
-        this.page.title = '随机算法';
+        this.page.url = 'http://leave.net.cn/2021/03/17/markdown-she-zhi-zi-ti-yan-se/';
+        this.page.identifier = '/2021/03/17/markdown-she-zhi-zi-ti-yan-se/';
+        this.page.title = '';
     };
     let disqus_shortname = '';
 
@@ -753,9 +749,10 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
             <div class="card">
                 <a href="/2021/03/17/markdown-she-zhi-zi-ti-yan-se/">
                     <div class="card-image">
@@ -773,9 +770,9 @@
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2021-03-17
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-03-17
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-user fa-fw"></i>
@@ -784,6 +781,7 @@
                         </span>
                     </div>
                 </div>
+
                 
             </div>
         </div>
@@ -794,13 +792,13 @@
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2021/03/16/hello-world/">
+                <a href="/2021/03/17/sui-ji-suan-fa/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/12.jpg" class="responsive-img" alt="Hello World">
+                        <img src="/medias/featureimages/17.jpg" class="responsive-img" alt="随机算法">
                         
-                        <span class="card-title">Hello World</span>
+                        <span class="card-title">随机算法</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -811,7 +809,7 @@
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2021-03-16
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-03-17
                             </span>
                         <span class="publish-author">
                             
@@ -820,6 +818,14 @@
                             
                         </span>
                     </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/%E7%AE%97%E6%B3%95-%E8%92%99%E7%89%B9%E5%8D%A1%E6%B4%9B-%E6%8B%89%E6%96%AF%E7%BB%B4%E5%8A%A0%E6%96%AF/">
+                        <span class="chip bg-color">算法 蒙特卡洛 拉斯维加斯</span>
+                    </a>
+                    
                 </div>
                 
             </div>
